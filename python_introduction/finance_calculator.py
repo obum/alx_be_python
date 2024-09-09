@@ -5,7 +5,7 @@ annual_interest_rate = 0.05
 monthly_income = int(monthly_income)
 total_monthly_expenses = int(total_monthly_expenses)
 
-monthly_savings = monthly_income - total_monthly_expenses
+monthly_savings = float(monthly_income - total_monthly_expenses)
 
 projected_savings = (monthly_savings * 12) + (monthly_savings * 12 * 0.05)
 
