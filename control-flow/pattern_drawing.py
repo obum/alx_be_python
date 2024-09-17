@@ -1,6 +1,4 @@
-square_size = input("Enter the size of the pattern:")
-
-square_size = int(square_size)
+square_size = int(input("Enter the size of the pattern:"))
 
 row_number = 0
 
