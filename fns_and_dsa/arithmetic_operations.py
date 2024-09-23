@@ -11,8 +11,12 @@ def perform_operation(num1, num2, operation):
             return num1 * num2
         
         case 'divide':
-            if num2  == 0:
+            if num2 != 0:
+                return num1 / num2
+            
+            elif num2  == 0:
                 return "num2 = 0, result is approaching infinity"
+            
             else:
                 return num1 / num2
             
