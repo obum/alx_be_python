@@ -36,7 +36,7 @@ if user_temperature.isdigit():
         print(f"{temperature_unit} unit is not valid")
         
 else:
-    print(f"Please enetr a number")
+    print(f"Invalid temperature. Please enter a numeric value. ")
     
 
 
