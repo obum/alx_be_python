@@ -20,15 +20,15 @@ class Book:
 class Library:
     
     def __init__(self):
-        self.___books = []
+        self._books = []
         self.checked_out_books = ""
         
     def add_book(self, book):
-        self.___books.append(book)
+        self._books.append(book)
         # print(f'{book.title} has been added to {self}')
         
     def check_out_book(self, title):
-        title_list = [book.title for book in self.___books]
+        title_list = [book.title for book in self._books]
         # print(title_list)
         
         if title not in title_list: 
@@ -37,8 +37,8 @@ class Library:
         else:         
             # print(f'{title} is Available, checking out : Successful')
             index_of_title = title_list.index(title)
-            self.checked_out_books = self.___books[index_of_title]
-            self.___books.remove(self.___books[index_of_title])
+            self.checked_out_books = self._books[index_of_title]
+            self._books.remove(self._books[index_of_title])
             
             
         
@@ -47,7 +47,7 @@ class Library:
             
     def list_available_books(self):
         
-        for book in self.___books:
+        for book in self._books:
             print(f'{book.title} by {book.author}')
         print()
         
