@@ -6,7 +6,12 @@ class Book:
         self.___is_checked_out = ''
         
     def return_book(self):
-        self.___is_checked_out = False
+        self.___is_checked_out = 'False'
+        
+        
+    # def check_out_book(self, title):
+    #     self.___is_checked_out = 'True'
+        
         
     # def __str__(self) -> str:
     #     return f'Book title: {self.title} by Book author: {self.author}'
