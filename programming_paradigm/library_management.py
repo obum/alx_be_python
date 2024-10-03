@@ -11,15 +11,15 @@ class Book:
     
 class Library:
     
-    def __init__(self) -> None:
+    def __init__(self):
         self.___books: list[Book] = []
         self.checked_out_books = ""
         
-    def add_book(self, book: Book):
+    def add_book(self, book):
         self.___books.append(book)
         # print(f'{book.title} has been added to {self}')
         
-    def check_out_book(self, title: str):
+    def check_out_book(self, title):
         title_list = [book.title for book in self.___books]
         # print(title_list)
         
