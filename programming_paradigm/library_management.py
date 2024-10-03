@@ -3,6 +3,9 @@ class Book:
     def __init__(self, title, author) -> None:
         self.title: str = title
         self.author: str = author
+        self.___is_checked_out = ''
+        
+    def return_book(self):
         self.___is_checked_out = False
         
     # def __str__(self) -> str:
