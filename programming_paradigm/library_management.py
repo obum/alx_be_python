@@ -39,12 +39,7 @@ class Library:
             index_of_title = title_list.index(title)
             self.checked_out_books = self._books[index_of_title]
             self._books.remove(self._books[index_of_title])
-            
-            
-        
-        
-
-            
+                    
     def list_available_books(self):
         
         for book in self._books:
@@ -56,9 +51,7 @@ class Library:
             self.add_book(self.checked_out_books)
         
             
-            
-        
-        
+                  
 def main():
         
     # book_1 = Book("Things fall apart", "Chinwe Achebe")
@@ -86,7 +79,3 @@ def main():
 
 if __name__ == "__main__":
     main()    
-
-# print(library.checked_out_books)
-
-# print(new_book, new_book._Book___is_checked_out, sep="\n")
